@@ -29,7 +29,7 @@
 1. استنساخ المشروع على جهازك:
 
    ```bash
-   git clone https://github.com/Yoriichi-Tsujikuni/Mohamed-Alaa-Portfolio.git
+   git clone https://github.com/Marwan-Omar729/Mohamed-Alaa-Portfolio.git
    ```
 2. فتح ملف index.html في أي متصفح حديث.
 3. التأكد من الاتصال بـ Firebase إذا كان هناك نموذج تفاعلي أو تخزين بيانات.
@@ -47,3 +47,4 @@
 
 **هذا المشروع مرخّص بموجب MIT License.
 يمكنك استخدامه وتعديله ونشره بحرية مع الإشارة إلى المؤلف الأصلي.**
+
