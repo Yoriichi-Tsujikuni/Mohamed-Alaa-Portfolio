@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Project — تفاصيل المشروع</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <!-- Video Js -->
+  <link href="https://vjs.zencdn.net/8.6.1/video-js.css" rel="stylesheet" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Icom -->
+  <link rel="icon" href="assets/image/logo.jpeg">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="container nav-inner">
+    <div class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <div class="logo">
+        <img src="assets/image/logo.jpeg" alt="logo" onerror="this.style.display='none'">
+      </div>
+      <div>
+        <h1>PROJECT<br><span class="alaa">DETAILS</span></h1>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; text-align: center;">
+  <h1 class="hero gradient" style="width: 100%; text-align: center;" data-aos="fade-up" data-aos-delay="100"></h1>
+</header>
+
+<main class="container">
+
+  <!-- Prpject – Info -->
+  <section data-aos="fade-up" data-aos-delay="100" style="margin-top: 40px;">
+    <h2 class="gradient" style="margin-bottom: 20px;">معلومات عن المشروع</h2>
+
+    <div class="box">
+      <p><strong>اسم المشروع:</strong> <span id="Projecttitle"></span></p>
+      <p><strong>نوع المشروع:</strong> <span id="ProjectType"></span></p>
+      <p><strong>الفكرة:</strong> <span id="Projectdetails"></span></p>
+    </div>
+  </section>
+
+  <!-- Photos / Videos -->
+  <section style="margin-top: 60px;">
+    <h2 class="gradient" id="HeroVid_Title" data-aos="fade-up">معرض المشروع</h2>
+    <div id="mediaGrid" class="img-grid" style="margin-top: 25px;">
+      <!-- Add Photos / Video Here -->
+    </div>
+  </section>
+
+  <!-- Hero Video -->
+  <section style="margin-top: 60px; text-align: center;">
+    <h2 class="gradient" id="HeroVid_Title" data-aos="fade-up">فيديو للمشروع</h2>
+
+    <!-- SECTION will be shown only if project has a hero video -->
+    <div style="margin-top: 25px; display: flex; justify-content: center;" data-aos="fade-up" data-aos-delay="100">
+      <div id="heroVideoSection" class="reels-container">
+        <!-- video element will be injected by JS when available -->
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Video Js -->
+<script src="https://vjs.zencdn.net/8.6.1/video.min.js"></script>
+<!-- Main Js -->
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100
+  });
+</script>
+<script type="module" src="assets/js/project.js"></script>
+</body>
+</html>
